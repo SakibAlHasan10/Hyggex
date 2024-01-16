@@ -11,6 +11,12 @@ const nav = (
     <NavLink to={"/contact"}>
       <li>Contact</li>
     </NavLink>
+    <NavLink to={"/faq"}>
+      <li>FAQ</li>
+    </NavLink>
+    <NavLink to={""} className={""}>
+      <button className="text-lg font-medium text-white bg-gradient-to-b h-[48px] text-center w-[120px] from-[#06286E] to-[#164EC0] rounded-3xl">Login</button>
+    </NavLink>
   </>
 );
 const Navbar = () => {
@@ -42,16 +48,13 @@ const Navbar = () => {
               {nav}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl"><img src={logo} alt="" /></a>
+          <a className="btn btn-ghost text-xl w-[191px] h-[39px]"><img src={logo} alt="" /></a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-6 text-lg font-normal">
+        <div className="navbar-end hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 gap-10 text-lg font-normal items-center">
             {nav}
                 
           </ul>
-        </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
         </div>
       </div>
     </div>
