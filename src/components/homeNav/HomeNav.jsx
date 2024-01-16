@@ -5,7 +5,7 @@ const nav = (
     <NavLink
       to={"/study"}
       className={({ isActive, isPending }) =>
-        isActive ? "active border-b-2 pb-1 border-[#06286E] text-[#06286E]" : isPending ? "pending" : ""
+        isActive ? "active border-b-2 pb-1 border-[#06286E] text-[#06286E] font-bold" : isPending ? "pending" : ""
       }
     >
       <li>Study</li>
@@ -49,7 +49,7 @@ const HomeNav = () => {
   return (
     <div>
       <div className="">
-        <ul className="menu menu-horizontal px-1 text-lg font-normal flex justify-between items-center">
+        <ul className="menu menu-horizontal px-1 text-xl font-medium text-[#696671] flex justify-between items-center">
           {nav}
         </ul>
       </div>
