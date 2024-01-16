@@ -11,33 +11,33 @@ const nav = (
       <li>Study</li>
     </NavLink>
     <NavLink
-      to={"/flashcard"}
+      to={"/quiz"}
       className={({ isActive, isPending }) =>
-        isActive ? "active" : isPending ? "pending" : ""
+        isActive ? "active border-b-2 pb-1 border-[#06286E] text-[#06286E] font-bold" : isPending ? "pending" : ""
       }
     >
       <li>Quiz</li>
     </NavLink>
     <NavLink
-      to={"/contact"}
+      to={"/test"}
       className={({ isActive, isPending }) =>
-        isActive ? "active" : isPending ? "pending" : ""
+        isActive ? "active border-b-2 pb-1 border-[#06286E] text-[#06286E] font-bold" : isPending ? "pending" : ""
       }
     >
       <li>Test</li>
     </NavLink>
     <NavLink
-      to={"/faq"}
+      to={"/game"}
       className={({ isActive, isPending }) =>
-        isActive ? "active" : isPending ? "pending" : ""
+        isActive ? "active border-b-2 pb-1 border-[#06286E] text-[#06286E] font-bold" : isPending ? "pending" : ""
       }
     >
       <li>Game</li>
     </NavLink>
     <NavLink
-      to={"/faq"}
+      to={"/others"}
       className={({ isActive, isPending }) =>
-        isActive ? "active" : isPending ? "pending" : ""
+        isActive ? "active border-b-2 pb-1 border-[#06286E] text-[#06286E] font-bold" : isPending ? "pending" : ""
       }
     >
       <li>Others</li>
